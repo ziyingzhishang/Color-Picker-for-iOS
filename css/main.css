@@ -98,15 +98,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.nav-pills>li>a, .nav-pills>li>a:hover, .nav-pills>li>a:focus {
+.nav-pills>li>a {
 color: #01011c;
-    background-color: 
-}
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-color: #01011c;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
+ .nav-pills>li>a:hover, .nav-pills>li>a:focus {
+     text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0);
+}
 
 #main-image {
     height: 607px;
@@ -142,16 +144,25 @@ color: #01011c;
     margin-top : 30px;
 }
 
+pre {
+    font-weight: 300;
+}
 .console {
     border-color: #000;
     color : #fff;
     background-color: #08042d;
+    font-weight: 500;
 }
-
 h4 {
     font-size: 19px;
-    font-style:bold;
+    font-weight: 500;
     padding-top:10px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 24px;
 }
 
 
@@ -349,6 +360,7 @@ body {
   padding-top: 20px;
   padding-bottom: 0px;
     color: #01011c;
+    font-family: "museo-sans",sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -364,12 +376,15 @@ body {
     border-bottom: #01011c solid 1px;
 }
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
-  padding-bottom: 19px;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+.header h1 {
+    padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
     color: #01011c;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 /* Custom page footer */
@@ -429,6 +444,7 @@ p {
     letter-spacing: 1px;
     line-height: 32px;
     font-size: 17px;
+    font-weight: 300;
 }
     pre {
         font-size: 15px;
